@@ -6,8 +6,8 @@ export const linksArr = [
     active: false,
   },
   { href: "#nuestro-equipo", label: "NUESTRO EQUIPO", active: false },
-  { href: "/#", label: "CALCULADORA", active: false },
-  { href: "/contacto", label: "CONTACTO", active: false },
+  { href: "#calculadora", label: "CALCULADORA", active: false },
+  { href: "#contacto", label: "CONTACTO", active: false },
 ];
 
 export const camposRight = [
