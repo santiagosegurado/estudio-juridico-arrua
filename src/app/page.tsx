@@ -1,5 +1,5 @@
+import About from "@/components/About";
 import Banner from "@/components/Banner";
-import CTA from "@/components/CTA";
 import ExpertiseFileds from "@/components/ExpertiseFileds";
 import Features from "@/components/Features";
 import Header from "@/components/Header";
@@ -13,7 +13,7 @@ export default function Home() {
       <Banner/>
       <Features/>
       <ExpertiseFileds/>
-      {/* <CTA/> */}
+      <About/>
     </main>
   )
 }
