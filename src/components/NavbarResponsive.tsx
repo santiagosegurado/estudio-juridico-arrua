@@ -17,7 +17,7 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
         openMenu ? "left-0" : "left-[100vw]"
       } w-full h-full bg-white z-10 xl:hidden flex flex-col gap-24 p-8 shadow-md transition-all duration-500`}
     >
-      <div className="w-[40px]">
+      <div className="w-[40px] cursor-pointer">
         <img
           src="/close.svg"
           alt="Close Estudio Arrua"
@@ -31,13 +31,14 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
             <div
               className="flex flex-row items-center gap-3 group"
               key={index}
-              onClick={() =>
+              onClick={() => {
                 setlinks(
                   links.map((l) => {
                     return { ...l, active: link.href === l.href };
                   })
-                )
-              }
+                );
+                setOpenMenu(false);
+              }}
             >
               <img
                 src={`/${link.active ? "active" : "dot"}.svg`}
