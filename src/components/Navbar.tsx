@@ -28,7 +28,7 @@ const Navbar = () => {
             } group-hover:opacity-100 transition-all`}
           />
           <a
-            href="#"
+            href={link.href}
             className={`${
               link.active ? "opacity-100" : "opacity-60"
             } group-hover:opacity-100 transition-all`}

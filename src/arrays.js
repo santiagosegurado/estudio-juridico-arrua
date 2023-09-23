@@ -1,7 +1,7 @@
 export const linksArr = [
-  { href: "/", label: "PRINCIPAL", active: true },
+  { href: "#home", label: "PRINCIPAL", active: true },
   {
-    href: "/campos-de-experiencia",
+    href: "#campos-de-experiencia",
     label: "CAMPO DE EXPERIENCIA",
     active: false,
   },

@@ -14,6 +14,7 @@ const Banner = () => {
           "url(https://www.welcomeargentina.com/paseos/palacio_de_justicia/palacio-justicia-2.jpg)",
       }}
       className="h-[100vh] md:h-[calc(100vh-80px)] lg:h-[calc(100vh-150px)] w-full bg-cover relative"
+      id="home"
     >
       <div className="absolute top-0 right-0 h-full w-full bg-[#0a1525e8] z-[0]"></div>
       <div className="text-white flex flex-col relative justify-center h-full pl-5 md:pl-20 xl:pl-40 gap-20">
