@@ -10,7 +10,7 @@ const HeaderResposive = () => {
       <div className="w-[45px]">
         <img className="w-full h-full" src="/logo.svg" alt="Estudio Juridico Arrua" />
       </div>
-      <div className="w-[45px]">
+      <div className="w-[45px] cursor-pointer">
         <img
           className="w-full h-full"
           src="/menu.svg"

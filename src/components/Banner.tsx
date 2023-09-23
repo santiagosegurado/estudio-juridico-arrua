@@ -27,11 +27,11 @@ const Banner = () => {
             EXPERTOS EN JUSTICIA
           </h1>
           <span className="leading-[27px] opacity-70">
-            Diam leo vitae tortor mauris faucibus odio nullam enim. At dolor
+            Asesoramiento y representación legal operando con el propósito de
+            ayudar a comprender, navegar y resolver
             <br className="md:block hidden" />
-            pellentesque eget et purus. Purus mauris eget maecenas placerat
-            <br className="md:block hidden" />
-            vehicula tortor massa.
+            cuestiones legales por abogados especializados en diversas áreas del
+            derecho.
           </span>
         </div>
         <div>

@@ -1,20 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-
+import { linksArr } from '../arrays'
 import { useState } from "react";
 
 const Navbar = () => {
-  const [links, setlinks] = useState([
-    { href: "/", label: "PRINCIPAL", active: true },
-    {
-      href: "/campos-de-experiencia",
-      label: "CAMPO DE EXPERIENCIA",
-      active: false,
-    },
-    { href: "/nuestro-equipo", label: "NUESTRO EQUIPO", active: false },
-    { href: "/#", label: "CAMPO DE EXPERIENCIA", active: false },
-    { href: "/contacto", label: "CONTACTO", active: false },
-  ]);
+  const [links, setlinks] = useState(linksArr);
 
   return (
     <nav className="flex flex-row gap-9 my-auto flex-wrap">

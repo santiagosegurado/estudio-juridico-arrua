@@ -12,11 +12,15 @@ const Header = () => {
         <div className="flex flex-row gap-8 p-4 border-b-2 border-[#BF9874]">
           <div className="flex flex-row gap-3">
             <img src="/phone.svg" alt="Estudio Arrua" />
-            <span>+ 383 (21) 23 43984</span>
+            <span className="text-slate-500 font-light">
+              + 383 (21) 23 43984
+            </span>
           </div>
           <div className="flex flex-row gap-3">
             <img src="/clock.svg" alt="Estudio Arrua" />
-            <span>LUNES a VIERNES de 8:00 a.m. a 5:00 p.m.</span>
+            <span className="text-slate-500 font-light">
+              LUNES a VIERNES de 8:00 a.m. a 5:00 p.m.
+            </span>
           </div>
         </div>
         <div className="flex flex-row h-full items-center justify-between mx-5">

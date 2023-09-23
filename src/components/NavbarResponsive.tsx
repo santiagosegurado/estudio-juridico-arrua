@@ -1,4 +1,5 @@
 "use client";
+import { linksArr } from "@/arrays";
 import { useState } from "react";
 
 /* eslint-disable @next/next/no-img-element */
@@ -8,17 +9,7 @@ interface NavbarProps {
 }
 
 const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
-  const [links, setlinks] = useState([
-    { href: "/", label: "PRINCIPAL", active: true },
-    {
-      href: "/campos-de-experiencia",
-      label: "CAMPO DE EXPERIENCIA",
-      active: false,
-    },
-    { href: "/nuestro-equipo", label: "NUESTRO EQUIPO", active: false },
-    { href: "/#", label: "CAMPO DE EXPERIENCIA", active: false },
-    { href: "/contacto", label: "CONTACTO", active: false },
-  ]);
+  const [links, setlinks] = useState(linksArr);
 
   return (
     <div
