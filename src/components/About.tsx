@@ -9,7 +9,7 @@ const marcellus = Marcellus({
 
 const About = () => {
   return (
-    <section className="flex flex-col bg-[#001025] py-28 px-4 md:px-28 text-white gap-16 items-center md:items-start" id="nuestro-equipo">
+    <section className="flex flex-col bg-[#001025] py-14 md:py-28 px-4 md:px-28 text-white gap-16 items-center md:items-start" id="nuestro-equipo">
       <div className="flex flex-col">
         <span className="text-[#BF9874] uppercase tracking-[4px] text-[18px]">
           Tu justicia, nuestra misión.

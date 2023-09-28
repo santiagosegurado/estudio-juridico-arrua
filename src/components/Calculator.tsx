@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
+"use client";
 import { Marcellus } from "next/font/google";
 import { useState } from "react";
 import ModalCalculator from "./ModalCalculator";
@@ -11,11 +11,13 @@ const marcellus = Marcellus({
 });
 
 const Calculator = () => {
-
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
 
   return (
-    <section className="flex flex-col gap-20 py-20 px-20" id="calculadora">
+    <section
+      className="flex flex-col gap-20 py-14 px-5 md:py-20 md:px-20"
+      id="calculadora"
+    >
       <div className="flex flex-col items-center">
         <div className="flex flex-row gap-7 items-center">
           <div>
@@ -36,13 +38,13 @@ const Calculator = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <span className="text-[#BF9874] text-[16px] lg:text-[20px] uppercase tracking-[4px] text-center">
             Calculamos tu justa compensación
           </span>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="flex flex-col items-center gap-3 cursor-pointer">
           <div className="w-[300px]">
             <img
@@ -51,10 +53,16 @@ const Calculator = () => {
               alt="Calculadora Arrua Estudio"
             />
           </div>
-          <h3 className="uppercase">Accidente de trabajo</h3>
+          <h3 className="font-light text-[20px]">Accidente de trabajo</h3>
+          <span
+            className="py-[8px] px-[16px] bg-[#BF9874]  cursor-pointer font-[600] text-[12px] text-white uppercase"
+            onClick={() => setOpenModal(true)}
+          >
+            calcular
+          </span>
         </div>
       </div>
-      {/* <ModalCalculator/> */}
+      <ModalCalculator openModal={openModal} setOpenModal={setOpenModal} />
     </section>
   );
 };
