@@ -15,7 +15,7 @@ const Calculator = () => {
 
   return (
     <section
-      className="flex flex-col gap-20 py-14 px-5 md:py-20 md:px-20"
+      className="flex flex-col gap-20 py-14 px-5 md:py-28 md:px-20"
       id="calculadora"
     >
       <div className="flex flex-col items-center">

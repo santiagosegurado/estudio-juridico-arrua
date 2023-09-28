@@ -10,11 +10,18 @@ const marcellus = Marcellus({
 
 const ExpertiseFileds = () => {
   return (
-    <section className="flex flex-col gap-20 py-20" id="campos-de-experiencia">
+    <section
+      className="flex flex-col gap-20 py-14 md:py-28"
+      id="campos-de-experiencia"
+    >
       <div className="flex flex-col items-center">
         <div className="flex flex-row gap-7 items-center">
           <div>
-            <img src="/separator-fields.svg" alt="Separator Arrua Estudio" />
+            <img
+              src="/separator-fields.svg"
+              alt="Separator Arrua Estudio"
+              className="hidden md:block"
+            />
           </div>
           <div>
             <h3
@@ -25,7 +32,7 @@ const ExpertiseFileds = () => {
           </div>
           <div>
             <img
-              className="rotate-180"
+              className="rotate-180 hidden md:block"
               src="/separator-fields.svg"
               alt="Separator Arrua Estudio"
             />

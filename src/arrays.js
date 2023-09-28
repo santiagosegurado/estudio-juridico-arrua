@@ -24,18 +24,22 @@ export const camposRight = [
     experts: 3,
   },
   {
-    title: "Derecho Familiar",
+    title: "Derecho de Familia",
     experts: 1,
   },
 ];
 
 export const camposLeft = [
   {
-    title: "Derecho Inmobiliario",
+    title: "Derecho Civil",
     experts: 2,
   },
   {
-    title: "Derecho Inmobiliario",
+    title: "Derecho Laboral",
+    experts: 1,
+  },
+  {
+    title: "Derecho Comercial",
     experts: 4,
   },
   {
