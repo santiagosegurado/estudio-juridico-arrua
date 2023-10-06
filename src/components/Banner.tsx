@@ -36,9 +36,9 @@ const Banner = () => {
           </span>
         </div>
         <div>
-          <span className="py-[12px] px-[20px] bg-[#BF9874]  cursor-pointer font-[600] text-sm">
-            SOBRE NOSOTROS
-          </span>
+          <a href="#campos-de-experiencia" className="py-[12px] px-[20px] bg-[#BF9874]  cursor-pointer font-[600] text-sm uppercase">
+            Campos de Experiencia
+          </a>
         </div>
       </div>
     </section>
