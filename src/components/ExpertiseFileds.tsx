@@ -48,16 +48,17 @@ const ExpertiseFileds = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start justify-around gap-9">
         <div className="flex flex-col gap-9 w-[90%] md:w-[40%]">
           {camposRight.map((item, index) => (
-            <div
+            <a
               className="flex flex-col gap-6 w-full cursor-pointer"
               key={index}
+              href="#contacto"
             >
               <div className="flex flex-row justify-between items-center">
                 <div>
                   <h4 className="text-[18px]">{item.title}</h4>
-                  <span className="text-[#829BBC]">
+                  {/* <span className="text-[#829BBC]">
                     {item.experts} Expertos
-                  </span>
+                  </span> */}
                 </div>
                 <div className="flex flex-row gap-2 items-center">
                   <span className="uppercase tracking-[2px] text-[14px] hidden md:block">
@@ -67,22 +68,23 @@ const ExpertiseFileds = () => {
                 </div>
               </div>
               <div className="w-full h-[1px] bg-[#BF9874]"></div>
-            </div>
+            </a>
           ))}
         </div>
 
         <div className="flex flex-col gap-9 w-[90%] md:w-[40%]">
           {camposLeft.map((item, index) => (
-            <div
+            <a
               className="flex flex-col gap-6 w-full cursor-pointer"
               key={index}
+              href="#contacto"
             >
               <div className="flex flex-row justify-between items-center">
                 <div>
                   <h4 className="text-[18px]">{item.title}</h4>
-                  <span className="text-[#829BBC]">
+                  {/* <span className="text-[#829BBC]">
                     {item.experts} Expertos
-                  </span>
+                  </span> */}
                 </div>
                 <div className="flex flex-row gap-2 items-center cursor-pointer">
                   <span className="uppercase tracking-[2px] text-[14px] hidden md:block">
@@ -92,7 +94,7 @@ const ExpertiseFileds = () => {
                 </div>
               </div>
               <div className="w-full h-[1px] bg-[#BF9874]"></div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
