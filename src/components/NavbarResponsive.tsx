@@ -15,7 +15,7 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
     <div
       className={`fixed top-0 ${
         openMenu ? "left-0" : "left-[100vw]"
-      } w-full h-full bg-white z-10 xl:hidden flex flex-col gap-24 p-8 shadow-md transition-all duration-500`}
+      } w-full h-full bg-white z-10 xl:hidden flex flex-col gap-14 p-8 shadow-md transition-all duration-500`}
     >
       <div className="w-[40px] cursor-pointer">
         <img
@@ -58,7 +58,7 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
             </div>
           ))}
         </nav>
-        <div className="flex flex-row gap-8 p-4 flex-wrap">
+        <div className="flex flex-row gap-5 p-3 flex-wrap">
           <div className="flex flex-row gap-3">
             <div className="w-[20px] h-[20px]">
               <img
