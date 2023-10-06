@@ -5,7 +5,6 @@ export const linksArr = [
     label: "CAMPO DE EXPERIENCIA",
     active: false,
   },
-  { href: "#nuestro-equipo", label: "NUESTRO EQUIPO", active: false },
   { href: "#calculadora", label: "CALCULADORA", active: false },
   { href: "#contacto", label: "CONTACTO", active: false },
 ];

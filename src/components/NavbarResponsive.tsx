@@ -25,7 +25,7 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
           onClick={() => setOpenMenu(false)}
         />
       </div>
-      <div className="flex flex-col items-center gap-16">
+      <div className="flex flex-col items-center gap-11">
         <nav className="flex flex-col gap-9 my-auto flex-wrap">
           {links.map((link, index) => (
             <div
@@ -58,9 +58,64 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
             </div>
           ))}
         </nav>
-        <span className="py-[12px] px-[20px] border border-[#001025] cursor-pointer font-[600] text-sm">
+        <div className="flex flex-row gap-8 p-4 flex-wrap">
+          <div className="flex flex-row gap-3">
+            <div className="w-[20px] h-[20px]">
+              <img
+                className="h-full w-full"
+                src="/phone.svg"
+                alt="Estudio Arrua"
+              />
+            </div>
+            <span className="text-slate-500 font-light">1168761237</span>
+          </div>
+          <div className="flex flex-row gap-3">
+            <div className="w-[20px] h-[20px]">
+              <img
+                className="h-full w-full"
+                src="/clock.svg"
+                alt="Estudio Arrua"
+              />
+            </div>
+
+            <span className="text-slate-500 font-light">
+              LUNES - VIERNES de 8:00 a 18:00
+            </span>
+          </div>
+          <div className="flex flex-row gap-3">
+            <div className="w-[23px] h-[23px]">
+              <img
+                className="h-full w-full"
+                src="/location.svg"
+                alt="Estudio Arrua"
+              />
+            </div>
+            <span className="text-slate-500 font-light">
+              Entre Ríos 2942, San Justo
+            </span>
+          </div>
+          <div className="flex flex-row gap-3">
+            <div className="w-[23px] h-[23px]">
+              <img
+                className="h-full w-full"
+                src="/email.svg"
+                alt="Estudio Arrua"
+              />
+            </div>
+            <span className="text-slate-500 font-light">
+              arrua.abogados@gmail.com
+            </span>
+          </div>
+        </div>
+        <a
+          onClick={() => {
+            setOpenMenu(false);
+          }}
+          className="py-[12px] px-[20px] border border-[#001025] cursor-pointer font-[600] text-sm"
+          href="#contacto"
+        >
           HACER CONSULTA
-        </span>
+        </a>
       </div>
     </div>
   );
