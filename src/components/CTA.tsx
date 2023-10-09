@@ -11,10 +11,10 @@ const CTA = () => {
     <article style={{backgroundImage: 'url(/cta.jpg)'}} className="w-full min-h-[500px] bg-cover text-white flex flex-col justify-center items-center gap-10 relative">
       <div className="w-full h-full absolute bg-[#001025cc] top-0 left-0"></div>
       <div className="flex flex-col gap-5 z-20">
-        <h4 className={`${marcellus.className} text-4xl uppercase`}>
+        <h4 className={`${marcellus.className} text-3xl md:text-4xl uppercase text-center`}>
           ¡Defendemos tus derechos, agenda tu cita ahora!
         </h4>
-        <span className="font-extralight text-gray-400 text-center">
+        <span className="font-extralight  text-gray-400 text-center">
           Agenda tu cita ahora mismo y déjanos ser tu defensa confiable en
           cualquier asunto legal que enfrentes.
           <br /> Tu tranquilidad y justicia son nuestra prioridad. ¡Te
