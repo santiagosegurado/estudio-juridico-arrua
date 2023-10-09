@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import CTA from "@/components/CTA";
 import Calculator from "@/components/Calculator";
 import Contact from "@/components/Contact";
 import ExpertiseFileds from "@/components/ExpertiseFileds";
@@ -17,7 +18,8 @@ export default function Home() {
       <Banner/>
       <Features/>
       <ExpertiseFileds/>
-      <About/>
+      {/* <About/> */}
+      <CTA/>
       <Calculator/>
       <Contact/>
       <Footer/>
