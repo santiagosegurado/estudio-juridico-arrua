@@ -25,7 +25,12 @@ export default function Home() {
       <Footer/>
       <a href="#home">
         <div className="fixed bottom-5 right-5 cursor-pointer z-50 bg-[#BF9874] rounded-sm">
-          <img src="/arrow-top.svg" alt="" />
+          <img src="/arrow-top.svg" alt="Estudio Arrua" />
+        </div>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=541168761237&text=Hola%20buenos%20dias,%20me%20gustar%C3%ADa%20agendar%20una%20cita">
+        <div className="fixed bottom-20 right-5 cursor-pointer z-50 rounded-sm">
+          <img src="/whatsapp.svg" alt="Estudio Arrua" />
         </div>
       </a>
     </main>
