@@ -16,11 +16,8 @@ export default function Home() {
       <Header/>
       <HeaderResposive/>
       <Banner/>
-      <Features/>
       <ExpertiseFileds/>
-      {/* <About/> */}
       <CTA/>
-      <Calculator/>
       <Contact/>
       <Footer/>
       <a href="#home">

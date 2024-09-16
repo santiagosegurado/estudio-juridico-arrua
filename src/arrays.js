@@ -5,44 +5,35 @@ export const linksArr = [
     label: "CAMPO DE EXPERIENCIA",
     active: false,
   },
-  { href: "#calculadora", label: "CALCULADORA", active: false },
   { href: "#contacto", label: "CONTACTO", active: false },
 ];
 
 export const camposRight = [
   {
-    title: "Asesoramiento Legal",
+    title: "Asesoramiento legal",
     experts: 4,
   },
   {
-    title: "Representación Legal",
+    title: "Derecho civil y familia",
     experts: 2,
   },
   {
-    title: "Redacción y Revisión de Documentos",
+    title: "Sucesiones",
     experts: 3,
-  },
-  {
-    title: "Derecho de Familia",
-    experts: 1,
   },
 ];
 
 export const camposLeft = [
   {
-    title: "Derecho Civil",
+    title: "Derecho laboral",
     experts: 2,
   },
   {
-    title: "Derecho Laboral",
+    title: "Accidentes de trabajo",
     experts: 1,
   },
   {
-    title: "Derecho Comercial",
+    title: "Derecho penal (Urgencias penales las 24 hs)",
     experts: 4,
-  },
-  {
-    title: "Derecho Penal",
-    experts: 1,
   },
 ];

@@ -17,24 +17,27 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: any) => {
+    console.log('se lanzo')
     e.preventDefault();
-
+    setLoading(true);
     const resp = await fetch("/api/send", {
       method: "POST",
       body: JSON.stringify(contact),
     });
 
     const data = await resp.json();
-
+    
     setContact({
       name: "",
       email: "",
       subject: "",
       message: "",
     });
-
+    setLoading(false);
+    
     if (data.id) {
       toast.success("Mensaje enviado con éxito");
     } else {
@@ -90,7 +93,9 @@ const Contact = () => {
                     alt="Estudio Arrua"
                   />
                 </div>
-                <span className="text-slate-500 font-light">1168761237</span>
+                <span className="text-slate-500 font-light">
+                  1168761237 - 1125434704
+                </span>
               </div>
               <div className="flex flex-row gap-3">
                 <div className="w-[20px] h-[20px]">
@@ -130,7 +135,14 @@ const Contact = () => {
                 </span>
               </div>
               <div className="w-full">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1760345721186!2d-58.56347022363452!3d-34.67550637292873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62ec4fc7cd9%3A0x72915a508dde7f12!2sAVZ%2C%20Entre%20R%C3%ADos%202942%2C%20B1754%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697053256359!5m2!1ses!2sar" width="100%" height="200" style={{border:0}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1760345721186!2d-58.56347022363452!3d-34.67550637292873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62ec4fc7cd9%3A0x72915a508dde7f12!2sAVZ%2C%20Entre%20R%C3%ADos%202942%2C%20B1754%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697053256359!5m2!1ses!2sar"
+                  width="100%"
+                  height="200"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -190,7 +202,7 @@ const Contact = () => {
                 contact.email.length > 0 &&
                 contact.subject.length > 0 &&
                 contact.message.length > 0 &&
-                contact.email.includes("@")
+                contact.email.includes("@") && !loading
                   ? ""
                   : "opacity-50 cursor-not-allowed"
               } py-[8px] px-[16px] bg-[#BF9874]  cursor-pointer font-[600] text-[15px] text-white uppercase text-center`}
@@ -202,7 +214,8 @@ const Contact = () => {
                   contact.email.length > 0 &&
                   contact.subject.length > 0 &&
                   contact.message.length > 0 &&
-                  contact.email.includes("@")
+                  contact.email.includes("@") &&
+                  !loading
                 )
               }
             />

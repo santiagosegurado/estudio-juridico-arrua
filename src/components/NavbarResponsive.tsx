@@ -59,7 +59,7 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
           ))}
         </nav>
         <div className="flex flex-row gap-5 p-3 flex-wrap">
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-3 items-center">
             <div className="w-[20px] h-[20px]">
               <img
                 className="h-full w-full"
@@ -67,7 +67,10 @@ const NavbarResponsive = ({ openMenu, setOpenMenu }: NavbarProps) => {
                 alt="Estudio Arrua"
               />
             </div>
-            <span className="text-slate-500 font-light">1168761237</span>
+            <div className="flex flex-col">
+              <span className="text-slate-500 font-light">1168761237</span>
+              <span className="text-slate-500 font-light">1125434704</span>
+            </div>
           </div>
           <div className="flex flex-row gap-3">
             <div className="w-[20px] h-[20px]">
